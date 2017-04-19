@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(rsa-test)
+set(CMAKE_BUILD_TYPE Debug)
+set(sources main.cpp)
+add_executable(rsa-test ${sources})
+target_link_libraries(rsa-test polarssl)
